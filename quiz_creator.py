@@ -32,7 +32,7 @@ def main():
         
         # Write the question and answers to the file
         with open(output_file, "a") as file:
-            file.write(f"Question: {questions}\n")
+            file.write(f"Question: {question}\n")
             for i, option in enumerate(['a', 'b', 'c', 'd']):
                 file.write(f("Option {option}: {choices[i]}\n"))
             file.write(f"Correct Answer: {correct_answer}\n")
