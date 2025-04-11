@@ -24,3 +24,8 @@ def main():
         for option in ['a', 'b', 'c', 'd']:
             choice = input(f"   ➡ Option {option}: ").title()
             choices.append(choice)
+        
+        correct_answer = input("\n✅ Enter the correct answer (a, b, c, d): ").lower()
+        while correct_answer not in ['a', 'b', 'c', 'd']:
+            print("❌ Invalid option. Please enter a, b, c, or d.")
+            correct_answer = input("✅ Enter the correct answer (a, b, c, d): ").lower()
