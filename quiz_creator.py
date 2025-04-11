@@ -37,3 +37,6 @@ def main():
                 file.write(f("Option {option}: {choices[i]}\n"))
             file.write(f"Correct Answer: {correct_answer}\n")
             file.write("-" * 50 + "\n")
+            
+        questions_added += 1
+        print(f"\n🎉 Question added succesfully!")
