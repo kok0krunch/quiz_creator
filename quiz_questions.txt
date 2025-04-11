@@ -1,0 +1,37 @@
+Quiz Questions
+==================================================
+Question: Which Planet Is Closest To The Sun?
+Option a: Mercury
+Option b: Venus
+Option c: Earth
+Option d: Mars
+Correct Answer: a
+--------------------------------------------------
+Question: What Is The Strongest Muscle In The Human Body?
+Option a: Heart
+Option b: Jaw
+Option c: Quadriceps
+Option d: Glutes
+Correct Answer: b
+--------------------------------------------------
+Question: What Color Is Formed When Blue And Yellow Are Added Together?
+Option a: Orange
+Option b: Violet
+Option c: Peach
+Option d: Green
+Correct Answer: d
+--------------------------------------------------
+Question: What Is The Largest Ocean On Earth?
+Option a: Pacific Ocean
+Option b: Atlantic Ocean
+Option c: Arctic Ocean
+Option d: Indian Ocean
+Correct Answer: a
+--------------------------------------------------
+Question: How Many Stars Are On The Philippine Flag?
+Option a: 1
+Option b: 2
+Option c: 3
+Option d: 4
+Correct Answer: c
+--------------------------------------------------
