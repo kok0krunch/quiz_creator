@@ -14,3 +14,7 @@ def main():
     print("=" * 50)
     
     questions_added = 0 # Counter for the number of questions added
+    
+    while True:
+        print("\nLet's create a new quiz question!")
+        question = input("📝 Enter the question: ").title()
