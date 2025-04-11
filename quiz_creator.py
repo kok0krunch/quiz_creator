@@ -48,3 +48,5 @@ def main():
             print(f"📂 Quiz data saved to: {os.path.abspath(output_file)}")
             print(f"📊 Total questions added: {questions_added}")
             break
+
+main()
