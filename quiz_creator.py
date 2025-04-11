@@ -12,3 +12,5 @@ def main():
     print("=" * 50)
     print("🎉 Welcome to the Quiz Creator! 🎉")
     print("=" * 50)
+    
+    questions_added = 0 # Counter for the number of questions added
