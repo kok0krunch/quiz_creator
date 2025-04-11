@@ -43,3 +43,8 @@ def main():
         
         # Ask if the user wants to add another question
         another_question = input("\n➕ Do you want to add another question? (yes/no): ").lower()
+        if another_question != 'yes':
+            print("\n✨ Thank you for using the Quiz Creator!")
+            print(f"📂 Quiz data saved to: {os.path.abspath(output_file)}")
+            print(f"📊 Total questions added: {questions_added}")
+            break
