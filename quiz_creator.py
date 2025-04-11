@@ -39,7 +39,7 @@ def main():
             file.write("-" * 50 + "\n")
             
         questions_added += 1
-        print(f"\n🎉 Question added succesfully!")
+        print(f"\n🎉 Question added successfully!")
         
         # Ask if the user wants to add another question
         another_question = input("\n➕ Do you want to add another question? (yes/no): ").lower()
