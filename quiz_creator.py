@@ -40,3 +40,6 @@ def main():
             
         questions_added += 1
         print(f"\n🎉 Question added succesfully!")
+        
+        # Ask if the user wants to add another question
+        another_question = input("\n➕ Do you want to add another question? (yes/no): ").lower()
