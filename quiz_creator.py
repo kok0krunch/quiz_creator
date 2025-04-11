@@ -18,3 +18,9 @@ def main():
     while True:
         print("\nLet's create a new quiz question!")
         question = input("📝 Enter the question: ").title()
+        
+        choices = []
+        print("\n💡 Enter options for answers (a, b, c, d):")
+        for option in ['a', 'b', 'c', 'd']:
+            choice = input(f"   ➡ Option {option}: ").title()
+            choices.append(choice)
