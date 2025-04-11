@@ -8,3 +8,7 @@ def main():
         with open(output_file, "w") as file:
             file.write("Quiz Questions\n")
             file.write("=" * 50 + "\n")
+            
+    print("=" * 50)
+    print("🎉 Welcome to the Quiz Creator! 🎉")
+    print("=" * 50)
