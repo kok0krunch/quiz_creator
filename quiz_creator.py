@@ -29,3 +29,11 @@ def main():
         while correct_answer not in ['a', 'b', 'c', 'd']:
             print("❌ Invalid option. Please enter a, b, c, or d.")
             correct_answer = input("✅ Enter the correct answer (a, b, c, d): ").lower()
+        
+        # Write the question and answers to the file
+        with open(output_file, "a") as file:
+            file.write(f"Question: {questions}\n")
+            for i, option in enumerate(['a', 'b', 'c', 'd']):
+                file.write(f("Option {option}: {choices[i]}\n"))
+            file.write(f"Correct Answer: {correct_answer}\n")
+            file.write("-" * 50 + "\n")
