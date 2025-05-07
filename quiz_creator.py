@@ -64,3 +64,10 @@ def ask_question(question_data):
         # Incorrect answer feedback with the correct answer displayed
         print(Fore.RED + f"❌ Wrong! The correct answer was: {question_data['correct_answer']}" + Style.RESET_ALL)
         return False
+    
+def main_menu():
+    # Load questions from the file
+    questions = load_quiz_questions()
+    if not questions:
+        print(Fore.RED + "❌ No questions available. Exiting the quiz." + Style.RESET_ALL)
+        sys.exit(1)
