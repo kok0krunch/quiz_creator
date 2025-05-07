@@ -107,3 +107,5 @@ def main_menu():
         else:
             print(Fore.RED + "👋 Exiting the quiz. Goodbye!" + Style.RESET_ALL)
             sys.exit(0)
+    elif choice == '3':
+        print(Fore.GREEN + "👋 Thank you for visiting the Quiz Game! Goodbye!" + Style.RESET_ALL)
