@@ -100,3 +100,4 @@ def main_menu():
         print("2️⃣  Enter the letter corresponding to your answer.")
         print("3️⃣  You will be informed if your answer is correct or wrong.")
         print("4️⃣  Have fun and do your best!")
+        main = input(Fore.LIGHTBLUE_EX + "\n" + "👉 Would you like to return to the main menu? (yes/no): " + Style.RESET_ALL)
