@@ -102,7 +102,7 @@ def main_menu():
         print("4️⃣  Have fun and do your best!")
         main = input(Fore.LIGHTBLUE_EX + "\n" + "👉 Would you like to return to the main menu? (yes/no): " + Style.RESET_ALL).lower()
         if main == 'yes':
-            print("\n")
+            print(Fore.LIGHTGREEN_EX + "🔄 Returning to the main menu..." + Style.RESET_ALL + "\n")
             main_menu()
         else:
             print(Fore.RED + "👋 Exiting the quiz. Goodbye!" + Style.RESET_ALL)
