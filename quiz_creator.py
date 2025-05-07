@@ -90,3 +90,6 @@ def main_menu():
         for question_data in questions:
             if ask_question(question_data):
                 correct_answers += 1
+        # End of the quiz
+        print(Fore.GREEN + f"\n🎉 You got {correct_answers} out of {len(questions)} questions correct! 🎉" + Style.RESET_ALL)
+        print(Fore.CYAN + "✨ Thank you for playing! Goodbye! ✨" + Style.RESET_ALL + "\n")
