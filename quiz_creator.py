@@ -47,3 +47,7 @@ def load_quiz_questions():
             correct_answer = None
 
     return questions
+
+def ask_question(question_data):
+    # Display the question
+    print(Fore.CYAN + "\n❓ " + question_data["question"] + Style.RESET_ALL)
