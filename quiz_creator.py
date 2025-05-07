@@ -51,3 +51,6 @@ def load_quiz_questions():
 def ask_question(question_data):
     # Display the question
     print(Fore.CYAN + "\n❓ " + question_data["question"] + Style.RESET_ALL)
+    # Display the options
+    for key, value in question_data["options"].items():
+        print(Fore.YELLOW + f"   {key}: {value}" + Style.RESET_ALL)
