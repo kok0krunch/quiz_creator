@@ -54,3 +54,5 @@ def ask_question(question_data):
     # Display the options
     for key, value in question_data["options"].items():
         print(Fore.YELLOW + f"   {key}: {value}" + Style.RESET_ALL)
+    # Prompt the user for their answer
+    user_answer = input(Fore.YELLOW + "👉 Your answer (a, b, c, d): " + Style.RESET_ALL).lower()
