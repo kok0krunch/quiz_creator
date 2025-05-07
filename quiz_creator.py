@@ -50,10 +50,10 @@ def load_quiz_questions():
 
 def ask_question(question_data):
     # Display the question
-    print(Fore.CYAN + "\n❓ " + question_data["question"] + Style.RESET_ALL)
+    print(Fore.LIGHTCYAN_EX + "\n❓ " + question_data["question"] + Style.RESET_ALL)
     # Display the options
     for key, value in question_data["options"].items():
-        print(Fore.YELLOW + f"   {key}: {value}" + Style.RESET_ALL)
+        print(Fore.WHITE + f"   {key}: {value}" + Style.RESET_ALL)
     # Prompt the user for their answer
     user_answer = input(Fore.YELLOW + "👉 Your answer (a, b, c, d): " + Style.RESET_ALL).lower()
     # Check if the user's answer is correct
