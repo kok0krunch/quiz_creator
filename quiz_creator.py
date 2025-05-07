@@ -101,3 +101,9 @@ def main_menu():
         print("3️⃣  You will be informed if your answer is correct or wrong.")
         print("4️⃣  Have fun and do your best!")
         main = input(Fore.LIGHTBLUE_EX + "\n" + "👉 Would you like to return to the main menu? (yes/no): " + Style.RESET_ALL)
+        if main == 'yes':
+            print("\n")
+            main_menu()
+        else:
+            print(Fore.RED + "👋 Exiting the quiz. Goodbye!" + Style.RESET_ALL)
+            sys.exit(0)
