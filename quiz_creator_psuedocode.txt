@@ -1,0 +1,70 @@
+START
+
+IMPORT required modules (os, sys, random, colorama)
+
+SET quiz_question = "quiz_questions.txt"
+
+FUNCTION load_quiz_questions():
+    IF file does not exist:
+        DISPLAY "Error: The file does not exist."
+        EXIT program
+    OPEN file and read lines
+    INITIALIZE question, options, correct_answer, questions
+    FOR each line in file:
+        IF line starts with "Question:":
+            EXTRACT question text
+        ELSE IF line starts with "Option":
+            EXTRACT option key and value
+        ELSE IF line starts with "Correct Answer:":
+            EXTRACT correct answer
+        ELSE IF line starts with separator:
+            ADD question, options, and correct_answer to questions list
+            RESET question, options, correct_answer
+    RETURN questions
+
+FUNCTION ask_question(question_data):
+    DISPLAY question
+    DISPLAY options
+    PROMPT user for answer
+    IF answer is correct:
+        DISPLAY "Correct! Great job!"
+        RETURN True
+    ELSE:
+        DISPLAY "Wrong! The correct answer was: [correct answer]"
+        RETURN False
+
+FUNCTION main_menu():
+    LOAD questions using load_quiz_questions()
+    IF no questions:
+        DISPLAY "No questions available. Exiting the quiz."
+        EXIT program
+    DISPLAY main menu with options:
+        1. Start Quiz
+        2. Rules of the Quiz
+        3. Exit
+    PROMPT user for choice
+    IF choice is "1":
+        SHUFFLE questions
+        INITIALIZE correct_answers = 0
+        FOR each question in questions:
+            CALL ask_question()
+            IF answer is correct:
+                INCREMENT correct_answers
+        DISPLAY "You got [correct_answers] out of [total questions] correct!"
+    ELSE IF choice is "2":
+        DISPLAY rules
+        PROMPT user to return to main menu
+        IF yes:
+            CALL main_menu()
+        ELSE:
+            EXIT program
+    ELSE IF choice is "3":
+        DISPLAY "Thank you for playing! Goodbye!"
+        EXIT program
+    ELSE:
+        DISPLAY "Invalid input. Please restart the program."
+        EXIT program
+
+CALL main_menu()
+
+END
