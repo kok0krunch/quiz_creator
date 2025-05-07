@@ -22,3 +22,28 @@ def load_quiz_questions():
     options = {}
     correct_answer = None
     questions = []  # List to store all questions
+    
+# Iterate through each line in the file to extract question data
+    for line in lines:
+        line = line.strip()
+        if line.startswith("Question:"):
+            question = line.split("Question:")[1].strip()
+        elif line.startswith("Option"):
+            option_key, option_value = line.split(":")
+            options[option_key.split()[1].strip()] = option_value.strip()
+        elif line.startswith("Correct Answer:"):
+            correct_answer = line.split("Correct Answer:")[1].strip()
+        elif line.startswith("-" * 50):  # End of a question block
+            # If all components of a question are present, add it to the list
+            if question and options and correct_answer:
+                questions.append({
+                    "question": question,
+                    "options": options,
+                    "correct_answer": correct_answer
+                })
+            # Reset for the next question
+            question = None
+            options = {}
+            correct_answer = None
+
+    return questions
