@@ -16,3 +16,9 @@ def load_quiz_questions():
 # Open the quiz question file in read mode
     with open(quiz_question, 'r') as file:
         lines = file.readlines()
+        
+# Initialize variables to store question data
+    question = None
+    options = {}
+    correct_answer = None
+    questions = []  # List to store all questions
