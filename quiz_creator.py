@@ -79,3 +79,4 @@ def main_menu():
     print("2. Rules of the Quiz")
     print("3. Exit")
     print("=" * 50)
+    choice = input(Fore.YELLOW + "👉 Choose an option (1-3): " + Style.RESET_ALL)
