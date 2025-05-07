@@ -112,3 +112,7 @@ def main_menu():
     else:
         print(Fore.RED + "❌ Invalid input. Please try again." + Style.RESET_ALL + "\n")
         main_menu()
+        
+# Start the quiz game by calling the main menu function
+if __name__ == "__main__":
+    main_menu()
