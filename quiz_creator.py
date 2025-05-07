@@ -86,3 +86,7 @@ def main_menu():
         random.shuffle(questions)
         # Initialize a counter for correct answers
         correct_answers = 0
+        # Iterate through all the questions
+        for question_data in questions:
+            if ask_question(question_data):
+                correct_answers += 1
