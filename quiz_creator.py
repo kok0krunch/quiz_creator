@@ -93,3 +93,10 @@ def main_menu():
         # End of the quiz
         print(Fore.GREEN + f"\n🎉 You got {correct_answers} out of {len(questions)} questions correct! 🎉" + Style.RESET_ALL)
         print(Fore.CYAN + "✨ Thank you for playing! Goodbye! ✨" + Style.RESET_ALL + "\n")
+    elif choice == '2':
+        # Display the rules of the quiz
+        print(Fore.CYAN + "\n📜 Rules of the Quiz:" + Style.RESET_ALL)
+        print("1️⃣  Each question has four options: a, b, c, and d.")
+        print("2️⃣  Enter the letter corresponding to your answer.")
+        print("3️⃣  You will be informed if your answer is correct or wrong.")
+        print("4️⃣  Have fun and do your best!")
