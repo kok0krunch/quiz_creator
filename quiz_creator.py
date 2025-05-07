@@ -12,3 +12,7 @@ def load_quiz_questions():
     if not os.path.exists(quiz_question):
         print(Fore.RED + "❌ Error: The file {quiz_question} does not exist." + Style.RESET_ALL)
         sys.exit(1)
+        
+# Open the quiz question file in read mode
+    with open(quiz_question, 'r') as file:
+        lines = file.readlines()
