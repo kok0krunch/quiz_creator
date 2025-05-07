@@ -56,3 +56,11 @@ def ask_question(question_data):
         print(Fore.YELLOW + f"   {key}: {value}" + Style.RESET_ALL)
     # Prompt the user for their answer
     user_answer = input(Fore.YELLOW + "👉 Your answer (a, b, c, d): " + Style.RESET_ALL).lower()
+    # Check if the user's answer is correct
+    if user_answer == question_data["correct_answer"]:
+        print(Fore.GREEN + "🎉 Correct! Great job!" + Style.RESET_ALL)  # Correct answer feedback
+        return True
+    else:
+        # Incorrect answer feedback with the correct answer displayed
+        print(Fore.RED + f"❌ Wrong! The correct answer was: {question_data['correct_answer']}" + Style.RESET_ALL)
+        return False
