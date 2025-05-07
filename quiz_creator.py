@@ -80,3 +80,9 @@ def main_menu():
     print("3. Exit")
     print("=" * 50)
     choice = input(Fore.YELLOW + "👉 Choose an option (1-3): " + Style.RESET_ALL)
+    
+    if choice == '1':
+        # Shuffle the questions to randomize their order
+        random.shuffle(questions)
+        # Initialize a counter for correct answers
+        correct_answers = 0
