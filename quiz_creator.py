@@ -71,3 +71,11 @@ def main_menu():
     if not questions:
         print(Fore.RED + "❌ No questions available. Exiting the quiz." + Style.RESET_ALL)
         sys.exit(1)
+        
+    # Display the main menu
+    print(Fore.MAGENTA + "🎮 Welcome to the Quiz Game! 🎮" + Style.RESET_ALL)
+    print("=" * 50)
+    print("1. Start Quiz")
+    print("2. Rules of the Quiz")
+    print("3. Exit")
+    print("=" * 50)
